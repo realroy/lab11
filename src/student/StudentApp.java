@@ -36,6 +36,6 @@ public class StudentApp {
 		Comparator<Student> byBirthday = (a, b) -> a.getBirthdate().getDayOfMonth() - b.getBirthdate().getDayOfMonth();
 		
 		StudentApp app = new StudentApp();
-		app.filterAndPrint(students, filter, action );
+		app.filterAndPrint(students, filter, action, byBirthday );
 	}
 }
